@@ -1,0 +1,80 @@
+/* =====================================
+   Reset CSS moderne (complément Tailwind)
+   ===================================== */
+
+/* Box sizing cohérent */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Supprimer marges par défaut */
+* {
+  margin: 0;
+}
+
+/* Améliorer la lisibilité globale */
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+/* Corps du document */
+body {
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Médias responsives */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Formulaires héritent de la typo */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Boutons propres */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Liens sans style par défaut */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Listes neutres */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+/* Tableaux propres */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Focus visible (accessibilité) */
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
